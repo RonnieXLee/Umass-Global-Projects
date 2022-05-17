@@ -1,7 +1,7 @@
 function randomGame(){
-    var num;
-    var times = 0;
-    var timer = setInterval(function(){
+    let num;
+    let times = 0;
+    let timer = setInterval(function(){
       num = Math.random();
       times++
       if(num > .75) {
