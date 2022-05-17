@@ -1,5 +1,5 @@
 function countDown(time){
-    var timer = setInterval(function(){
+    let timer = setInterval(function(){
       time--;
       if(time <= 0){
         clearInterval(timer);
