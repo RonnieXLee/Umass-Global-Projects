@@ -1,0 +1,30 @@
+<div class="app">
+	<header class="top-header">
+	   <h1>JEOPARDY!</h1>
+	   <link rel="stylesheet" href="style.css">
+	   <p class="score">Score <span class="score-count"></span></p>
+	</header>
+	
+	 <div class="board">
+	 </div>
+	
+	 <div class="card-modal">
+		<div class=card-modal-inner>
+		   <h2 class="clue-text"></h2>
+		   <form autocomplete="off">
+			  <input name="user-answer" type="text" />
+			  <button type="submit">Answer</button>
+		   </form>
+		   <div class="result">
+			  <p class="result_success">CORRECT</p>
+			  <p class="result_fail">INCORRECT</p>
+			  <p class="result_correct-answer">
+				 The correct answer is <span class="result_correct-answer-text"></span>
+			  </p>
+		   </div>
+		</div>
+	 </div>
+	 <button id="restart-button">Restart</button>
+	 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	 <script src="script.js"></script>
+ </div>
