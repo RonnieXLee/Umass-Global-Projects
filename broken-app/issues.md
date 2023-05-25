@@ -1,0 +1,11 @@
+# Broken App Issues
+-	The script was not parsing the incoming JSON request body.
+-	All API requests were being made sequentially which slows down the process.
+-	The error handling was incorrect. Errors should be passed to next().
+-	The err was not defined in the catch block.
+-	No error handling middleware was implemented.
+-	Hardcoded API URLs aren't best practice. They could potentially change and should be stored in a configuration.
+-	Lack of comments in the code making it harder to understand.
+-	No checking whether the incoming data is in the expected format or not. The code assumes the "developers" property will always exist and it will be an array.
+-	The server port (3000) is hardcoded, it's a better practice to have it in an environment variable so it can be changed based on the environment where the app runs.
+-	Use of var to declare variables, it's better to use const or let.
