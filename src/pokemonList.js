@@ -1,0 +1,32 @@
+const pokemon = [
+  "pikachu",
+  "charizard",
+  "squirtle",
+  "jigglypuff",
+  "bulbasaur",
+  "blastoise",
+  "torterra",
+  "gengar",
+  "arcanine",
+  "dragonite",
+  "blaziken",
+  "umbreon",
+  "lucario",
+  "gardevoir",
+  "eevee",
+  "umbreon",
+  "absol",
+  "typhlosion",
+  "ampharos",
+  "flygon",
+  "ninetales",
+  "tyranitar",
+  "infernape",
+  "luxray",
+  "scizor",
+  "mudkip",
+  "garchomp",
+  "snorlax"
+];
+
+export default pokemon;
