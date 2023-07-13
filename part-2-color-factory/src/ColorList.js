@@ -1,0 +1,35 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "./ColorList.css";
+
+function ColorList({ colors, clearColors }) {
+  const colorLinks = Object.keys(colors).map((colorName) => (
+    <li key={colorName}>
+      <Link to={`/colors/${colorName}`}>{colorName}</Link>
+    </li>
+  ));
+
+  function handleReset() {
+    if (clearColors && typeof clearColors === "function") {
+      clearColors();
+    }
+  }
+
+  return (
+    <div className="ColorList">
+      <header className="ColorList-header">
+        <h1 className="ColorList-title">Welcome to the color factory!</h1>
+        <h1>
+          <Link to="/colors/new">Add a color</Link>
+        </h1>
+      </header>
+      <div className="ColorList-intro">
+        <p>Please select a color.</p>
+        <ul>{colorLinks}</ul>
+      </div>
+      <button onClick={handleReset}>Reset</button>
+    </div>
+  );
+}
+
+export default ColorList;
