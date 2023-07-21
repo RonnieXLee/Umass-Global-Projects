@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const Container = styled.div`
-  height: 100px;
+  height: 200px;
   ${mobile({ height: '50px' })}
 `;
 
@@ -58,6 +58,9 @@ const Logo = styled.h1`
   cursor: pointer;
   text-decoration: none;
   color: grey;
+  img {
+    width: 800px; /* Adjust the width as per your preference */
+    height: auto; /* This will maintain the aspect ratio */
 `;
 
 const Right = styled.div`
@@ -150,9 +153,9 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <Logo>FASHION FIZZNESS</Logo>
-          </Link>
+          <Logo to="/">
+            <img src="https://i.imgur.com/Kd3OLyn.jpg" alt="Fashion Fizzness" />
+          </Logo>
         </Center>
         <Right>
           {isLoggedIn ? (
@@ -165,7 +168,7 @@ const Navbar = () => {
               <MenuItem>LOG IN</MenuItem>
             </Link>
           )}
-          {/* Other menu items */}
+
           <Link
             to="/register"
             style={{ textDecoration: 'none', color: 'inherit' }}
