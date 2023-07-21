@@ -29,6 +29,9 @@ const Logo = styled.h1`
   font-family: Oleo Script;
   font-size: 24px;
   ${mobile({ fontSize: '24px' })}
+  img {
+    width: 400px; /* Adjust the width as per your preference */
+    height: auto; /* This will maintain the aspect ratio */
 `;
 
 const Desc = styled.p`
@@ -97,7 +100,15 @@ const Payment = styled.img`
 `;
 
 const AppDownloadText = styled.p`
-  margin-top: 70px; /* Adjust the margin-top value to lower the text */
+  margin-top: 5px; /* Adjust the margin-top value to lower the text */
+`;
+
+const AppImage = styled.img`
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /* You can adjust the width and height as per your preference */
+  width: ${(props) => (props.width ? props.width : '300px')};
+  height: auto;
 `;
 
 const Footer = () => {
@@ -129,7 +140,9 @@ const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>FASHION FIZZNESS</Logo>
+        <Logo to="/">
+          <img src="https://i.imgur.com/Kd3OLyn.jpg" alt="Fashion Fizzness" />
+        </Logo>
         <Desc>
           Join the fashion frenzy! We're here to add a sparkling twist to your
           style game. From head-turning gowns to sassy streetwear, we've got the
@@ -161,6 +174,10 @@ const Footer = () => {
       </Left>
       <Center>
         <Title></Title>
+        <AppImage
+          src="https://i.imgur.com/sWtZfHl.jpg"
+          alt="Download Our App"
+        />
         <AppDownloadText>
           <Desc>Download our App and earn 100 FF points!</Desc>
           <SocialContainer>
