@@ -30,7 +30,7 @@ const Logo = styled.h1`
   font-size: 24px;
   ${mobile({ fontSize: '24px' })}
   img {
-    width: 400px; /* Adjust the width as per your preference */
+    width: 600px; /* Adjust the width as per your preference */
     height: auto; /* This will maintain the aspect ratio */
 `;
 
@@ -104,10 +104,10 @@ const AppDownloadText = styled.p`
 `;
 
 const AppImage = styled.img`
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   /* You can adjust the width and height as per your preference */
-  width: ${(props) => (props.width ? props.width : '300px')};
+  width: ${(props) => (props.width ? props.width : '400px')};
   height: auto;
 `;
 
@@ -148,8 +148,8 @@ const Footer = () => {
           style game. From head-turning gowns to sassy streetwear, we've got the
           perfect fizz for every occasion. Get ready to unleash your inner
           fashionista and let your fizzness shine through! Cheers to fabulous
-          and fizz-tistic fashion adventures with Fashion Fizzness! Follow
-          us!🥂✨
+          and fizz-tistic fashion adventures with Fashion Fizzness! Follow us!
+          Download our App and earn 100 FF points!🥂✨
         </Desc>
         <SocialContainer>
           <SocialIcon color="3B5999" onClick={handleFacebookClick}>
@@ -174,21 +174,7 @@ const Footer = () => {
       </Left>
       <Center>
         <Title></Title>
-        <AppImage
-          src="https://i.imgur.com/sWtZfHl.jpg"
-          alt="Download Our App"
-        />
-        <AppDownloadText>
-          <Desc>Download our App and earn 100 FF points!</Desc>
-          <SocialContainer>
-            <SocialIcon color="708090" onClick={handleAppleClick}>
-              <Apple />
-            </SocialIcon>
-            <SocialIcon color="708090" onClick={handleAndroidClick}>
-              <Android />
-            </SocialIcon>
-          </SocialContainer>
-        </AppDownloadText>
+        <AppImage src="https://i.imgur.com/sWtZfHl.jpg" />
       </Center>
       <Right>
         <Title>Contact</Title>
