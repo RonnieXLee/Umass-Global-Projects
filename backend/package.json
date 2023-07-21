@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "cd ../frontend && yarn install && yarn start"
   },
   "keywords": [],
   "author": "",
