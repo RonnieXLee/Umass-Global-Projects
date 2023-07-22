@@ -33,7 +33,7 @@
     "slugify": "^1.6.6"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start && echo 'Redirecting to /home...'",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
