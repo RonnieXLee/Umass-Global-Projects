@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "author": "",
+  "license": "",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.4",
