@@ -153,7 +153,7 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <Link to="/home" style={{ textDecoration: 'none', color: 'inherit' }}>
             <Logo>
               <img
                 src="https://i.imgur.com/Kd3OLyn.jpg"
