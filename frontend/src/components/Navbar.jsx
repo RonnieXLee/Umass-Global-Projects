@@ -153,9 +153,14 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo to="/">
-            <img src="https://i.imgur.com/Kd3OLyn.jpg" alt="Fashion Fizzness" />
-          </Logo>
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Logo>
+              <img
+                src="https://i.imgur.com/Kd3OLyn.jpg"
+                alt="Fashion Fizzness"
+              />
+            </Logo>
+          </Link>
         </Center>
         <Right>
           {isLoggedIn ? (
