@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "concurrently \"cd backend && yarn install && yarn start\" \"cd frontend && yarn install && yarn start\""
-  }
+  },
   "dependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
   }
 }
