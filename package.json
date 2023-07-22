@@ -1,4 +1,10 @@
 {
+  "name": "ecommerceapi",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "license": "",
   "scripts": {
     "start": "concurrently \"cd backend && yarn install && yarn start\" \"cd frontend && yarn install && yarn start\""
   },
