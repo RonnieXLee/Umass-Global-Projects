@@ -6,7 +6,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"cd backend && yarn install && ./node_modules/bower/bin/bower install && yarn start\" \"cd frontend && yarn install && yarn start\"",
+    "start": "concurrently \"cd backend && npm install && ./node_modules/bower/bin/bower install && npm run build\" \"cd frontend && yarn install && yarn start\"",
     "build": "grunt dist",
   },
   "dependencies": {
